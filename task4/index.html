@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Assignments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Assignment 1 -->
+    <section>
+        <h2>1. Dark Theme</h2>
+
+        <div id="app" class="day">
+            <h3>Hello World</h3>
+            <p>Click the button to change theme.</p>
+        </div>
+
+        <button id="swap" class="button_day" onclick="swapTheme()">
+            Change Theme
+        </button>
+    </section>
+
+    <!-- Assignment 2 -->
+    <section>
+        <h2>2. Div Creation</h2>
+
+        <button onclick="createDiv(200,100,'New Div Created')">
+            Create Div
+        </button>
+
+        <div id="container"></div>
+    </section>
+
+    <!-- Assignment 3 -->
+    <section>
+        <h2>3. Hide / Show Paragraph</h2>
+
+        <p id="useless-paragraph">
+            This paragraph can be hidden and shown.
+        </p>
+
+        <button onclick="toggleVisibility()">
+            Hide / Show
+        </button>
+    </section>
+
+    <!-- Assignment 4 -->
+    <section>
+        <h2>4. Dynamic CSS</h2>
+
+        <input type="color" id="colorbox">
+        <button id="colorchange">Change Color</button>
+
+        <br><br>
+
+        <label>Font Size:</label>
+        <input type="range" id="fontsize" min="10" max="50" value="20">
+
+        <br><br>
+
+        <button id="italic">Italic</button>
+        <button id="underline">Underline</button>
+        <button id="bold">Bold</button>
+
+        <br><br>
+
+        <select id="list">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+
+        <button id="getstyle">Get CSS</button>
+
+        <p id="text-container">
+            This text will change dynamically.
+        </p>
+
+        <p id="css-props"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
